@@ -26,14 +26,12 @@ void CoolArray<T>::updateSize()      // Updates the array to have double the siz
 template<typename T>
 void CoolArray<T>::coolPushback(const T& value)
 {
-    for (int i = 0; i < 1000; i++) {
         if (numElements == current_capacity)        // Checks if the array is full and if true is calls updateSize()
             updateSize();
         // Adds item to the end the items with no space by updating the element at numElements
         DynamicArray[numElements] = value;
         // Increments Num Elements
         numElements++;
-    }
 };
 
 
