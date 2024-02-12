@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 
+
 template<typename T> class CoolArray {
 protected:
 	//Elements of the CoolArray

@@ -7,7 +7,6 @@
 
 int argument;
 
-
 bool getInput() {
     std::string input;
     std::cin >> input;
@@ -55,7 +54,7 @@ int main() {
                 // Clear the input stream and ignore invalid input
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                std::cout << "Invalid input. Please enter an integer between 1 -> 5." << std::endl;
+                std::cout << "Invalid input. Please enter an integer between 1 -> 6." << std::endl;
             }
         }
         // Input is valid enter switch:
@@ -69,10 +68,18 @@ int main() {
             break;
         case 2:
             // Code for case 2
-            std::system("cls || clear");
-            std::cout << "Please enter the index of the element to remove from the array (Q to quit): ";
-            if (getInput())
-                oda.remove(argument);
+            try {
+                std::system("cls || clear");
+                std::cout << "Please enter the index of the element to remove from the array (Q to quit): ";
+                if (getInput())
+                    oda.remove(argument);
+            }
+            catch (const std::out_of_range& e) {
+                std::cout << e.what();
+                std::cout << "\nPress Enter to continue...";
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                std::cin.get(); // Wait for Enter key
+            }
             break;
         case 3:
             // Code for case 3
