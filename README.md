@@ -1,7 +1,9 @@
-# Data Structues Assignment #1:
+# Data Structures Assignment #1:
 Jack Lawson
 # Report:
 Running properly on Visual Studio 2022. Ensure all files are in the assignment-proj folder and open the solution in Visual Studio, then run without debugging and the console should open with the menu to test the functions.
+
+Template Classes were used for expandability, however that will probably end up being unnecessary.
 
 # Images:
 <img width="877" alt="main_menu" src="https://github.com/JackCheeseBurger/data-struct-assignment1/assets/93215803/d95d5281-ab15-42bc-975e-47a5c9edb873">
