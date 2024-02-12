@@ -3,7 +3,7 @@ Jack Lawson
 # Report:
 Running properly on Visual Studio 2022. Ensure all files are in the assignment-proj folder and open the solution in Visual Studio, then run without debugging and the console should open with the menu to test the functions.
 
-Template Classes were used for expandability, however that will probably end up being unnecessary.
+Template Classes were used for expandability, however that will probably end up being unnecessary. Especially as file input is currently only built to work with integers but that could be easily changed.
 
 # Images:
 <img width="877" alt="main_menu" src="https://github.com/JackCheeseBurger/data-struct-assignment1/assets/93215803/d95d5281-ab15-42bc-975e-47a5c9edb873">
